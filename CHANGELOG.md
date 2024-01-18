@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2](https://github.com/hacomono/terraform-string-convert-format/compare/v1.0.1...v1.0.2) (2024-01-18)
+
+
+### Bug Fixes
+
+* そのままの文字列も返すようにした ([eb547cf](https://github.com/hacomono/terraform-string-convert-format/commit/eb547cf6bcd18ac05a83aa1657e01d62c4878587))
+
 ## [1.0.1](https://github.com/hacomono/terraform-string-convert-format/compare/v1.0.0...v1.0.1) (2024-01-18)
 
 
