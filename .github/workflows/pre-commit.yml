@@ -46,7 +46,7 @@ jobs:
         uses: clowdhaus/terraform-composite-actions/pre-commit@v1.8.3
         with:
           terraform-version: ${{ steps.minMax.outputs.minVersion }}
-          args: 'terraform_validate --color=always --show-diff-on-failure --files ${{ matrix.directory }}/*'
+          args: "terraform_validate --color=always --show-diff-on-failure --files ${{ matrix.directory }}/*"
 
       - name: Pre-commit Terraform ${{ steps.minMax.outputs.minVersion }}
         # Run only validate pre-commit check on min version supported
@@ -54,7 +54,7 @@ jobs:
         uses: clowdhaus/terraform-composite-actions/pre-commit@v1.8.3
         with:
           terraform-version: ${{ steps.minMax.outputs.minVersion }}
-          args: 'terraform_validate --color=always --show-diff-on-failure --files $(ls *.tf)'
+          args: "terraform_validate --color=always --show-diff-on-failure --files $(ls *.tf)"
 
   preCommitMaxVersion:
     name: Max TF pre-commit
@@ -87,7 +87,15 @@ jobs:
         with:
           terraform_version: ${{ steps.minMax.outputs.maxVersion }}
 
-      - name: Execute pre-commit
+      - name: terraform test ${{ steps.minMax.outputs.maxVersion }}
+        id: terraform_test
+        shell: bash
+        working-directory: tests
+        run: |
+          terraform init
+          terraform test
+
+      - name: Execute pre-commit ${{ steps.minMax.outputs.maxVersion }}
         id: pre_commit
         continue-on-error: true
         shell: bash
