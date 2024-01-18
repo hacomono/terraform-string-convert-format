@@ -12,6 +12,7 @@
  *
  * ```
  * terraform_string_convert_format = {
+ *  "pure" = "hello new world"
  *  "camelcase" = "helloNewWorld"
  *  "kebabcase" = "hello-new-world"
  *  "lower" = "hello new world"
@@ -25,6 +26,7 @@
 
 locals {
   formats = {
+    pure           = var.str
     upper          = upper(var.str)
     lower          = lower(var.str)
     camelcase      = replace(join("", [substr(var.str, 0, 1), substr(title(var.str), 1, -1)]), " ", "")

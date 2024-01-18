@@ -4,6 +4,7 @@ output "formats" {
 output sample:
 
 terraform_string_convert_format = {
+ "pure" = "hello new world"
  "camelcase" = "helloNewWorld"
  "kebabcase" = "hello-new-world"
  "lower" = "hello new world"

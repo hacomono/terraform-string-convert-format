@@ -20,6 +20,7 @@ Output:
 
 ```
 terraform_string_convert_format = {
+ "pure" = "hello new world"
  "camelcase" = "helloNewWorld"
  "kebabcase" = "hello-new-world"
  "lower" = "hello new world"
@@ -59,5 +60,5 @@ No resources.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_formats"></a> [formats](#output\_formats) | output sample:<br><br>terraform\_string\_convert\_format = {<br> "camelcase" = "helloNewWorld"<br> "kebabcase" = "hello-new-world"<br> "lower" = "hello new world"<br> "pascalcase" = "HelloNewWorld"<br> "snakecase" = "hello\_new\_world"<br> "upper" = "HELLO NEW WORLD"<br> "uppercamelcase" = "HelloNewWorld"<br> "upperkebabcase" = "Hello-New-World"<br>} |
+| <a name="output_formats"></a> [formats](#output\_formats) | output sample:<br><br>terraform\_string\_convert\_format = {<br> "pure" = "hello new world"<br> "camelcase" = "helloNewWorld"<br> "kebabcase" = "hello-new-world"<br> "lower" = "hello new world"<br> "pascalcase" = "HelloNewWorld"<br> "snakecase" = "hello\_new\_world"<br> "upper" = "HELLO NEW WORLD"<br> "uppercamelcase" = "HelloNewWorld"<br> "upperkebabcase" = "Hello-New-World"<br>} |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
