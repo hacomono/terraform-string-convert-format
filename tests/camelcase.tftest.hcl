@@ -2,7 +2,7 @@ run "check_camelcase_normal" {
   command = plan
 
   variables {
-    str      = "hello new world"
+    str      = "hello new worlda"
     expected = "helloNewWorld"
   }
 
