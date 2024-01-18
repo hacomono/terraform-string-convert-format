@@ -95,7 +95,7 @@ jobs:
 
       - name: Commit pre-commit diff
         if: ${{ steps.pre_commit.outcome == 'failure' }}
-        uses: stefanzweifel/git-auto-commit-action@v4.14.1
+        uses: stefanzweifel/git-auto-commit-action@v4.16.0
         with:
           commit_message: Update pre-commit diff
 
