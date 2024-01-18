@@ -4,6 +4,8 @@
 
 このModuleを使うと、特定のServiceのname属性に「-」が使えない文字列があった際に、変換処理を自分で書かなくても良くなります。
 
+使い方は、各単語ごとに半角スペースで区切った文字列をstrに指定するだけです。
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 Usage:
 
