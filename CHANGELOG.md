@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# 1.0.0 (2024-01-18)
+
+
+### Features
+
+* first commit ([5d7ba95](https://github.com/hacomono/terraform-string-convert-format/commit/5d7ba950aff404fb80843f6d99c7129b12ce3a3f))
+
 # [1.1.0](https://github.com/hacomono/terraform-module-template/compare/v1.0.0...v1.1.0) (2022-08-01)
 
 
