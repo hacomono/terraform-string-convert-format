@@ -1,6 +1,6 @@
 # terraform-string-convert-format
 
-このrポジ鳥はstring型の文字列をcamelcase、snakecaseなど様々なformatで返すterraform moduleです。
+このリポジトリはstring型の文字列をcamelcase、snakecaseなど様々なformatで返すterraform moduleです。
 
 このModuleを使うと、特定のServiceのname属性に「-」が使えない文字列があった際に、変換処理を自分で書かなくても良くなります。
 
